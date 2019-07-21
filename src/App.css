@@ -31,3 +31,9 @@
     transform: rotate(360deg);
   }
 }
+
+.add-fab {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
