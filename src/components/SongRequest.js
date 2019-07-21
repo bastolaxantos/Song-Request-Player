@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Header from './Header.js'
-import RequestBody from './RequestBody'
+import SongTable from './SongTable'
 import { Add } from '@material-ui/icons'
 import { Fab, Dialog, DialogTitle, DialogActions, DialogContentText, DialogContent, TextField, Button, CircularProgress } from '@material-ui/core'
 import axios from 'axios'
@@ -154,7 +154,7 @@ export default class SongRequest extends Component {
         return (
             <div>
                 <Header />
-                <RequestBody requestList={this.state.requestList} isPlayer={false} onChangeVote={(id, isUpvote) => this.onChangeVote(id, isUpvote)} deleteThis={(id) => this.deleteThis(id)} />
+                <SongTable requestList={this.state.requestList} isPlayer={false} onChangeVote={(id, isUpvote) => this.onChangeVote(id, isUpvote)} deleteThis={(id) => this.deleteThis(id)} />
                 {this.state.loading ? <CircularProgress style={{ position: 'absolute' }} /> : null}
                 <Fab color="primary" aria-label="Add" size="large" style={{ position: 'absolute', margin: 30, bottom: 0, right: 0 }} onClick={this.onAddClick}>
                     <Add />

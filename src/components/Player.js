@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import YouTubePlayer from 'react-player/lib/players/YouTube'
-import ReactPlayer from 'react-player'
 import axios from 'axios'
 import url from '../utils'
 
-import { Button } from '@material-ui/core'
-import RequestBody from './RequestBody'
+import SongTable from './SongTable'
 import Header from './Header'
 //...
 
@@ -117,7 +115,7 @@ export default class Player extends Component {
                     onPlay={() => this.changePlayStatus(this.state.currentId, true)}
                 />
                 {/* </div> */}
-                <RequestBody requestList={this.state.requestList} isPlayer={true} onEnded={(id) => this.onPlayEnded(id)} onPlay={(id, url) => this.onPlay(id, url)} />
+                <SongTable requestList={this.state.requestList} isPlayer={true} onEnded={(id) => this.onPlayEnded(id)} onPlay={(id, url) => this.onPlay(id, url)} />
 
             </div>
         )

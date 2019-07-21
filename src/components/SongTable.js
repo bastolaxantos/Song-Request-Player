@@ -2,7 +2,7 @@ import React from 'react'
 import { Typography, Table, TableBody, TableCell, TableRow, TableHead, Paper, IconButton, Badge } from "@material-ui/core"
 import { ThumbUp, ThumbDown, Delete, PlayArrow } from "@material-ui/icons"
 
-const RequestBody = (props) => {
+const SongTable = (props) => {
     // console.log(props)
     return (
         <div style={{ margin: 30 }}>
@@ -63,7 +63,7 @@ const RequestBody = (props) => {
     )
 }
 
-export default RequestBody
+export default SongTable
 
 function secondsToString(seconds) {
     var numminutes = Math.floor((((seconds % 31536000) % 86400) % 3600) / 60);
