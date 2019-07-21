@@ -1,9 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Steps To Run
-`git clone https://github.com/bastolaxantos/Song-Request-Player.git`
-`cd Song-Request-Player`
-`npm install`
-`npm start`
+
+### `git clone https://github.com/bastolaxantos/Song-Request-Player.git`
+### `cd Song-Request-Player`
+### `npm install`
+### `npm start`
 
 ## Available Scripts
 
